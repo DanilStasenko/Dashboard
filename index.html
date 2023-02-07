@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/dashboard.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <title>Personal dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+
+            <section class="section-clock">
+                <span class="clock">00:00</span>
+            </section>
+
+            <section class="form-section">
+                    <form class="name-form">
+                        <input type="text" placeholder="What's your name"
+                        minlength="1"
+                        maxlength="15"
+                        >
+                        <button type="submit" class="btn-form">Confirm</button>
+                    </form>
+                <p class="greeting"></p>
+                <span class="delete-name">X</span>
+            </section>
+
+            <section class="todo-section">
+                <form class="todo__form">
+                    <input type="text" placeholder="Add a task" maxlength="100" minlength="2">
+                    <button class="btn-form">Add</button>
+                </form>
+                <ul class="todo__list"></ul>
+            </section>
+
+            <section class="weather-section">
+                <img alt="weather-icon" class="weather-img">
+                <p class="place"></p>
+                <p class="temperature"></p>
+                <p class="temperature-feel"></p>
+                <p class="wind"></p>
+            </section>
+
+        </div>
+    </main>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="deleteUser.js"></script>
+    <script src="todo.js"></script>
+    <script src="bgImg.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
